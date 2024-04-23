@@ -1,0 +1,34 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 60px;
+    height: 30px;
+    font: inherit;
+  }
+  
+  .icon-wrapper {
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .info {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .my-icon {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ }
