@@ -1,4 +1,11 @@
 .contact-list {
+  width: 540px;
+  margin-left: 310px;
   list-style-type: none;
-  padding: 0;
+  height: 860px;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
