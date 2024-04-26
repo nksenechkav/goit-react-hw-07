@@ -1,3 +1,11 @@
+@media screen and (min-width: 768px) {
+  .phonebook-container {
+    max-width: 768px;
+    height: 628px;
+  }
+}
+
+@media screen and (min-width: 1158px){
 .phonebook-container {
   max-width: 1080px;
   height: 1920px;
@@ -12,8 +20,8 @@
 }
 
 h1 {
+  padding-left: 380px;
   font-size: 70px;
-  text-align: center;
   color: #333;
   text-decoration: underline;
 }
@@ -21,4 +29,4 @@ h1 {
 .b {
   font-weight: bold;
 }
-
+}
