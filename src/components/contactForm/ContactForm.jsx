@@ -19,10 +19,11 @@ const ContactForm = () => {
 
   const handleSubmit = (values, actions) => {
     const nextContact = {
+      ...values,
       name: values.name.trim(),
       number: values.number.trim(),
-      ...values,
     }
+
     dispatch(addContact(nextContact));
 		actions.resetForm();
 	};
