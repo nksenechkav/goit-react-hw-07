@@ -5,8 +5,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
 import { fetchContacts } from '../../redux/operations'
 import { selectIsLoading, selectError } from '../../redux/selectors'
-
+import LoaderComponent from '../loader/Loader'
+import ErrorMessage from '../error/ErrorMessage'
 import './App.css'
+
 
 function App() {
   const dispatch = useDispatch();
@@ -23,7 +25,8 @@ function App() {
        <h1>Phonebook</h1>
        <ContactForm/>
        <SearchBox/>
-       {isLoading && !error && <b>Request in progress...</b>}
+       {isLoading && <LoaderComponent/>}
+       {error && <ErrorMessage/>}
        <ContactList/>
     </div>
   );
